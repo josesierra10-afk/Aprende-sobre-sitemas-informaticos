@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Evaluativa - Unidad 3: Cuestionario de Prospectiva</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad Evaluativa - Unidad 3</h1>
+        <h2>Cuestionario: Prospectiva y Futuro de la Tecnología</h2>
+        <p>Selecciona la opción correcta para cada pregunta. ¡Haz clic en "Verificar Respuestas" al terminar!</p>
+
+        <div class="quiz-box">
+            <div class="question-item">
+                <p class="question-text">1. ¿Cuál es el principal objetivo de la prospectiva tecnológica?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> A. Describir tecnologías actuales.</label><br>
+                    <label><input type="radio" name="q1" value="b"> B. Predecir el futuro exacto de la tecnología.</label><br>
+                    <label><input type="radio" name="q1" value="c"> C. Explorar posibles futuros tecnológicos y prepararse para ellos.</label><br>
+                    <label><input type="radio" name="q1" value="d"> D. Analizar el impacto de la tecnología en el pasado.</label>
+                </div>
+                <div class="feedback-q" id="feedback-q1"></div>
+            </div>
+
+            <div class="question-item">
+                <p class="question-text">2. ¿Qué concepto se refiere a la capacidad de las tecnologías para conectar objetos cotidianos a internet?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> A. Inteligencia Artificial.</label><br>
+                    <label><input type="radio" name="q2" value="b"> B. Internet de las Cosas (IoT).</label><br>
+                    <label><input type="radio" name="q2" value="c"> C. Robótica avanzada.</label><br>
+                    <label><input type="radio" name="q2" value="d"> D. Blockchain.</label>
+                </div>
+                <div class="feedback-q" id="feedback-q2"></div>
+            </div>
+
+            <div class="question-item">
+                <p class="question-text">3. ¿Cuál de los siguientes es un riesgo ético asociado al desarrollo de la Inteligencia Artificial?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> A. Automatización de tareas repetitivas.</label><br>
+                    <label><input type="radio" name="q3" value="b"> B. Sesgos en la toma de decisiones por algoritmos.</label><br>
+                    <label><input type="radio" name="q3" value="c"> C. Mayor eficiencia en la producción.</label><br>
+                    <label><input type="radio" name="q3" value="d"> D. Acceso a grandes volúmenes de datos.</label>
+                </div>
+                <div class="feedback-q" id="feedback-q3"></div>
+            </div>
+
+            <div class="question-item">
+                <p class="question-text">4. La "tecnología verde" se enfoca principalmente en:</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> A. El desarrollo de videojuegos.</label><br>
+                    <label><input type="radio" name="q4" value="b"> B. Soluciones tecnológicas que minimizan el impacto ambiental.</label><br>
+                    <label><input type="radio" name="q4" value="c"> C. La creación de dispositivos más pequeños.</label><br>
+                    <label><input type="radio" name="q4" value="d"> D. La expansión de redes de comunicación.</label>
+                </div>
+                <div class="feedback-q" id="feedback-q4"></div>
+            </div>
+        </div>
+
+        <button onclick="checkQuiz()">Verificar Respuestas</button>
+        <div id="quiz-summary-feedback" class="feedback"></div>
+        <button onclick="resetQuiz()" class="reset-button">Reiniciar Cuestionario</button>
+
+        <div class="references">
+            <h3>Referencias de la Unidad III:</h3>
+            <ul>
+                <li>"Prospectiva Tecnológica: Qué es y por qué es importante". (s.f.). Recuperado de https://dialnet.unirioja.es/descarga/articulo/8793320.pdf</li>
+                <li>"El futuro de la tecnología: tendencias y retos". (s.f.). Recuperado de https://www.beetrack.com/es/blog/tecnologia-en-el-futuro</li>
+                <li>[Agregar más referencias relevantes de la Unidad III según el contenido real del curso]</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+:root {
+  /* --- Paleta de colores --- */
+  --color-principal: #0948b9;
+  --color-secundario: #31a532;
+  --color-acento: #fe9521;
+  --color-blanco: #ffffff;
+  --color-oscuro: #222932;
+  --color-gris: #f4f6f9;
+}
+
+footer {
+  width: 100%; /* Ancho completo */
+  background-color: var(--color-oscuro);
+  color: var(--color-blanco); /* Color de texto en el footer */
+  padding: 20px 0 0 0; /* Espaciado vertical */
+  position: relative;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: var(--max-container-width); /* No excede los 980px dimensión fija */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 0 15px; /* Espaciado vertical */
+  background-color: var(--color-oscuro);
+}
+
+/* Columnas en el footer */
+.footer-columns {
+  display: flex; /* Flexbox para organizar columnas */
+  flex-wrap: wrap; /* Permite envolver en dispositivos pequeños */
+  gap: var(--grid-gap); /* Espacio entre columnas */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.footer-column {
+  flex: 1; /* Cada columna ocupa el mismo ancho */
+  min-width: 250px; /* Ancho mínimo por columna */
+}
+
+.footer-column h4 {
+  margin-bottom: 10px; /* Espacio inferior para el título */
+  color: var(--color-acento);
+}
+
+.footer-column p {
+  font-size: var(--fuente-p-size-small); /* Tamaño texto footer */
+}
+
+.footer-column p a {
+  color: aliceblue;
+}
+
+/* Redes Sociales en Footer */
+.footer-social {
+  text-align: center; /* Centrado de íconos */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  margin: 0 10px; /* Separación entre iconos */
+  cursor: pointer; /* Cursor pointer */
+  transition: transform 0.3s ease; /* Transición para animación (Animaciones) */
+}
+
+.footer-social img:hover {
+  transform: scale(1.2); /* Aumenta en hover las animaciones */
+}
+
+/* Línea Divisoria en el footer */
+.footer-divider {
+  border-top: 1px solid var(--color-secundario); /* Línea superior */
+  margin: 20px 0; /* Espaciado vertical */
+}
+
+/* Logos adicionales en columnas dentro del footer */
+.footer-logos {
+  display: flex; /* Flexbox para distribuir los logos */
+  justify-content: space-around; /* Distribución equitativa */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.footer-logos img {
+  max-height: 40px; /* Altura máxima para los logos */
+}
+
+/* Créditos del Footer */
+.footer-credits {
+    text-align: center; /* Texto centrado */
+    font-size: 0.8rem; /* Texto pequeño */
+    margin-top: 20px;
+    background-color: var(--color-principal);
+    padding: 15px 0;
+    color: var(--color-blanco);
+}
+
+.footer-credits a:visited {
+    color: var(--color-blanco);
+}
+
+/* === RESPONSIVE: GRID y FLEXBOX === */
+@media (max-width: 900px) {
+
+  /* Menú de navegación en móvil */
+  nav {
+    display: block; /* ubica elementos verticalmente */
+  }
+
+  nav>ul>li {
+    width: 100%; /* cada ítem ocupa todo el ancho */
+  }
+
+  nav>ul>li>a {
+    padding: 12px 15px; /* Disminuye padding */
+    border-bottom: 1px solid var(--color-blanco); /* Línea divisoria inferior */
+    text-align: left; /* texto a la izquierda */
+  }
+
+  /* Submenús en móvil */
+  nav ul li ul {
+    position: static; /* posicion en flujo normal */
+    display: none;
+    min-width: auto; /* Quita ancho mínimo */
+    background-color: var(--color-oscuro); /* Fondo de submenú móvil */
+    box-shadow: none; /* elimina sombra */
+  }
+
+  nav ul li:hover>ul,
+  nav ul li:focus-within>ul {
+    display: block; /* Muestra submenú al interactuar */
+  }
+
+  nav ul li ul li ul {
+    position: static;
+    display: none;
+    min-width: auto;
+    background-color: var(--color-oscuro);
+    box-shadow: none;
+  }
+
+  nav ul li ul li:hover>ul,
+  nav ul li ul li:focus-within>ul {
+    display: block;
+  }
+
+  /* columnas del footer en móvil */
+  .footer-columns {
+    flex-direction: column; /* ubicar columnas vertical */
+    align-items: center;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .footer-logos {
+    flex-direction: column; /* Logos en columna */
+    align-items: center;
+  }
+
+}

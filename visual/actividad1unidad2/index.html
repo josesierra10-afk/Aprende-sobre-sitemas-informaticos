@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad Evaluativa - Unidad 2</h1>
+        <h2>Clasificador de Tecnologías Emergentes</h2>
+        <p>Arrastra cada tecnología o su aplicación a la categoría correspondiente. ¡Verifica al terminar!</p>
+
+        <div class="tech-items-pool">
+            <h3>Tecnologías / Aplicaciones</h3>
+            <div class="tech-item" draggable="true" id="t1" data-category="salud">Edición genética para curar enfermedades.</div>
+            <div class="tech-item" draggable="true" id="t2" data-category="industria">Robots colaborativos en fábricas.</div>
+            <div class="tech-item" draggable="true" id="t3" data-category="vida-diaria">Asistentes virtuales (Alexa, Google Assistant).</div>
+            <div class="tech-item" draggable="true" id="t4" data-category="medio-ambiente">Paneles solares de nueva generación.</div>
+            <div class="tech-item" draggable="true" id="t5" data-category="comunicacion">Cadenas de bloques para transacciones seguras.</div>
+            <div class="tech-item" draggable="true" id="t6" data-category="entretenimiento-educacion">Experiencias inmersivas con Realidad Virtual.</div>
+            <div class="tech-item" draggable="true" id="t7" data-category="industria">Fabricación de prototipos con Impresión 3D.</div>
+            <div class="tech-item" draggable="true" id="t8" data-category="vida-diaria">Hogares controlados por dispositivos inteligentes (IoT).</div>
+            <div class="tech-item" draggable="true" id="t9" data-category="salud">Bioimpresión de órganos.</div>
+        </div>
+
+        <div class="category-zones-container">
+            <div class="category-zone" id="zone-salud">
+                <h3>Salud / Biotecnología</h3>
+            </div>
+            <div class="category-zone" id="zone-industria">
+                <h3>Industria / Producción</h3>
+            </div>
+            <div class="category-zone" id="zone-vida-diaria">
+                <h3>Vida Diaria / Hogar</h3>
+            </div>
+            <div class="category-zone" id="zone-medio-ambiente">
+                <h3>Medio Ambiente / Energía</h3>
+            </div>
+            <div class="category-zone" id="zone-comunicacion">
+                <h3>Comunicación / Finanzas</h3>
+            </div>
+            <div class="category-zone" id="zone-entretenimiento-educacion">
+                <h3>Entretenimiento / Educación</h3>
+            </div>
+        </div>
+
+        <button onclick="checkClassifier()">Verificar Clasificación</button>
+        <div id="classifier-feedback" class="feedback"></div>
+        <button onclick="resetClassifier()" class="reset-button">Reiniciar Actividad</button>
+
+        <div class="references">
+            <h3>Referencias de la Unidad II:</h3>
+            <ul>
+                <li>"Qué son las tecnologías emergentes y su impacto". (s.f.). Recuperado de https://es.weforum.org/stories/emerging-technologies/</li>
+                <li>"Aplicaciones de la Inteligencia Artificial". (s.f.). Recuperado de https://www.ibm.com/mx-es/think/topics/trustworthy-ai</li>
+                <li>[Agregar más referencias relevantes de la Unidad II según el contenido real del curso]</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>

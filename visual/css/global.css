@@ -1,0 +1,94 @@
+/* === ESTILOS GENERALES A TODA LA PÁGINA: variables, reset, tipografías, colores, espaciados, etc === */
+
+/* --- Fuentes utilizadas --- */
+@font-face {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400; /* 400 a 700 */
+  font-style: normal;
+  src: url('assets/fonts/open-sans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url('assets/fonts/open-sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400; /* 400 a 700 */
+  font-style: normal;
+  src: url('assets/fonts/ubuntu/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url('assets/fonts/ubuntu/Ubuntu-Regular.ttf');
+}
+
+:root {
+  /* --- Paleta de colores --- */
+  --color-principal: #0948b9;
+  --color-secundario: #31a532;
+  --color-acento: #fe9521;
+  --color-blanco: #ffffff;
+  --color-oscuro: #222932;
+  --color-gris: #f4f6f9;
+
+  /* --- Tipos fuentes --- */
+  --fuente-titulo: 'Ubuntu', sans-serif;
+  --fuente-parrafo: 'OpenSans', sans-serif;
+
+  /* --- Tamaños fuentes --- */
+  --fuente-h1-size: 2rem; /* Tamaño título H1 */
+  --fuente-h2-size: 1.75rem; /* Tamaño título H2 */
+  --fuente-h3-size: 1.5rem; /* Tamaño título H3 */
+  --fuente-h4-size: 1rem; /* Tamaño título H4 */
+  --fuente-p-size: 1rem; /* Tamaño título H3 */
+  --fuente-p-size-small: 0.9rem; /* Tamaño título H3 */
+  
+  /* --- Tamaños y espacios --- */
+  --max-container-width: 980px; /* Ancho máximo de los contenedores centrales */
+  --grid-gap: 0; /* Espacio entre elementos en grid */
+}
+
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluir bordes y padding en el ancho total */
+  /* list-style: none; */
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family:var(--fuente-titulo);
+}
+
+p {
+  font-family: var(--fuente-parrafo);
+}
+
+/* Reset para listas */
+ul {
+  list-style: none; /* quita viñetas predeterminadas */
+}
+
+/* Estilos base para el body */
+body {
+  font-family: var(--fuente-parrafo);
+  font-size: var(--fuente-p-size);
+  color: var(--color-oscuro);
+  line-height: 1.6;
+  background-color: var(--color-blanco);
+}
+
+/* contenedor para centrar contenido máximo a 980px */
+.container {
+  max-width: var(--max-container-width); /* Ancho máximo */
+  margin: 0 auto; /* centrar en horizontal */
+  padding: 0 15px; /* espacio lateral */
+}

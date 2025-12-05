@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad Evaluativa - Unidad 1</h1>
+        <h2>Relaciona Conceptos de Sistemas Tecnológicos</h2>
+        <p>Arrastra cada descripción o componente a la casilla del sistema tecnológico al que pertenece. ¡Haz clic en "Verificar" al terminar!</p>
+
+        <div class="drag-items-container">
+            <h3>Conceptos y Componentes</h3>
+            <div class="drag-item" draggable="true" id="item1" data-target="smartphone">Transformación de datos, comunicación instantánea, aplicaciones.</div>
+            <div class="drag-item" draggable="true" id="item2" data-target="semforo">Regulación del flujo de tráfico, luces de colores, temporizadores.</div>
+            <div class="drag-item" draggable="true" id="item3" data-target="lavadora">Limpieza de ropa, ciclo de lavado, entrada de agua y detergente.</div>
+            <div class="drag-item" draggable="true" id="item4" data-target="smartphone">Hardware (pantalla, procesador), Software (sistema operativo, apps).</div>
+            <div class="drag-item" draggable="true" id="item5" data-target="semforo">Sensores de vehículos, controlador central, energía eléctrica.</div>
+            <div class="drag-item" draggable="true" id="item6" data-target="lavadora">Tambor, motor, bomba de agua, programación de ciclos.</div>
+            <div class="drag-item" draggable="true" id="item7" data-target="smartphone">Permite el acceso a información y entretenimiento.</div>
+            <div class="drag-item" draggable="true" id="item8" data-target="semforo">Garantiza la seguridad vial en intersecciones.</div>
+            <div class="drag-item" draggable="true" id="item9" data-target="lavadora">Ahorro de tiempo y esfuerzo en tareas domésticas.</div>
+        </div>
+
+        <div class="drop-zones-container">
+            <div class="drop-zone" id="drop-smartphone">
+                <h3>Smartphone</h3>
+            </div>
+            <div class="drop-zone" id="drop-semforo">
+                <h3>Semáforo</h3>
+            </div>
+            <div class="drop-zone" id="drop-lavadora">
+                <h3>Lavadora</h3>
+            </div>
+        </div>
+
+        <button onclick="checkActivity()">Verificar</button>
+        <div id="activity-feedback" class="feedback"></div>
+        <button onclick="resetActivity()" class="reset-button">Reiniciar Actividad</button>
+
+        <div class="references">
+            <h3>Referencias de la Unidad I:</h3>
+            <ul>
+                <li>González, J. (2018). *Introducción a los sistemas tecnológicos*. Editorial Alfaomega. (Libro base para conceptos de sistemas tecnológicos y sus componentes.)</li>
+                <li>Gómez, L., & Pérez, M. (2020). *Tecnología y Sociedad: Una mirada actual*. Editorial McGraw-Hill. (Sobre tipos de sistemas tecnológicos y su impacto en la vida cotidiana.)</li>
+                <li>Ministerio de Educación Nacional de Colombia. (2016). *Guía de Tecnología e Informática para Educación Básica*. Disponible en: https://www.mineducacion.gov.co/</li>
+                <li>Pérez, R. (2019). *Fundamentos de Tecnología: Procesos y Sistemas*. Editorial Trillas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>

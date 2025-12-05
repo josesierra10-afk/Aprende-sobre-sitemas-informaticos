@@ -1,0 +1,113 @@
+/* === COMPONENTES ESPECIFICOS: botones, tarjetas, formularios, etc === */
+
+.btn {
+  display: inline-block; /* Permite aplicar padding y margin */
+  padding: 10px 20px;
+  background-color: var(--color-acento); /* Fondo del botón */
+  color: var(--color-blanco);
+  text-decoration: none; /* quitar subrayado */
+  transition: background-color 0.3s ease; /* Transición para hover */
+}
+
+.btn:hover {
+  background-color: var(--color-secundario); /*  cambia el fondo en hover */
+}
+
+/*--- Estilos menú seleccionado ---*/
+
+nav ul li.active a,
+nav ul li a:hover {
+  background: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+
+/*--- Estilos Swiper ---*/
+
+.swiper {
+  width: 100%;
+  height: 650px;
+}
+
+.swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-cover {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 72, 185, .6);
+  position: absolute;
+}
+
+.swiper-text {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-family: var(--fuente-titulo);
+  font-size: var(--fuente-h2-size);
+  color: var(--color-blanco);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  color: var(--color-blanco);
+  --swiper-navigation-size: 40px;
+}
+
+.swiper-button-next {
+  color: var(--color-blanco);
+  --swiper-navigation-size: 40px;
+}
+
+/*--- Estilos tarjetas ---*/
+
+/* Centrar el contenido y asegurar responsividad */
+.target {
+  font-family: var(--fuente-parrafo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+sl-card {
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+sl-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.target section {
+  margin-bottom: 15px;
+}
+
+.target section:last-of-type {
+  margin-bottom: 0;
+}
+
+.target section h3 {
+  margin: 0 0 5px 0;
+  font-size: var(--fuente-h4-size);
+  color: var(--color-secundario);
+}
+
+.target section p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-oscuro);
+  font-size: var(--fuente-p-size-small);
+}

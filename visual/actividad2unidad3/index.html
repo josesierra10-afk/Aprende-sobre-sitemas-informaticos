@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Evaluativa - Unidad 3: Debate Tecnológico</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad Evaluativa - Unidad 3</h1>
+        <h2>Debate Interactivo: Beneficios y Desafíos de la Tecnología</h2>
+        <p>Arrastra cada afirmación a la columna de "Beneficios" o "Desafíos/Riesgos" según corresponda. ¡Luego verifica tus respuestas!</p>
+
+        <div class="argument-pool">
+            <h3>Argumentos a Clasificar</h3>
+            <div class="argument-card" draggable="true" id="arg1" data-type="beneficio">Acceso a educación y recursos de aprendizaje globales.</div>
+            <div class="argument-card" draggable="true" id="arg2" data-type="desafio">Riesgos de ciberataques y pérdida de datos personales.</div>
+            <div class="argument-card" draggable="true" id="arg3" data-type="beneficio">Mejora significativa en diagnósticos y tratamientos médicos.</div>
+            <div class="argument-card" draggable="true" id="arg4" data-type="desafio">Impacto ambiental por residuos electrónicos y consumo energético.</div>
+            <div class="argument-card" draggable="true" id="arg5" data-type="beneficio">Comunicación instantánea y conexión con personas a distancia.</div>
+            <div class="argument-card" draggable="true" id="arg6" data-type="desafio">Aumento de la dependencia tecnológica y adicción a dispositivos.</div>
+            <div class="argument-card" draggable="true" id="arg7" data-type="beneficio">Optimización de procesos industriales y productividad.</div>
+            <div class="argument-card" draggable="true" id="arg8" data-type="desafio">Brecha digital y desigualdad en el acceso a la información.</div>
+            <div class="argument-card" draggable="true" id="arg9" data-type="beneficio">Desarrollo de energías limpias y soluciones sostenibles.</div>
+        </div>
+
+        <div class="debate-columns">
+            <div class="drop-zone" id="zone-beneficios">
+                <h3>Beneficios de la Tecnología</h3>
+            </div>
+            <div class="drop-zone" id="zone-desafios">
+                <h3>Desafíos y Riesgos de la Tecnología</h3>
+            </div>
+        </div>
+
+        <button onclick="checkDebate()">Verificar Clasificación</button>
+        <div id="debate-feedback" class="feedback"></div>
+        <button onclick="resetDebate()" class="reset-button">Reiniciar Actividad</button>
+
+        <div class="references">
+            <h3>Referencias de la Unidad III:</h3>
+            <ul>
+                <li>"Beneficios de la tecnología en la sociedad". (s.f.). Recuperado de https://infodigital.ciberlinea.net/tecno/beneficios-de-la-tecnologia-en-la-sociedad</li>
+                <li>"9 beneficios de la tecnología". (s.f.). Recuperado de https://impulsoactual.com/tecnologia/9-beneficios-de-la-tecnologia</li>
+                <li>"Conectando el futuro: beneficios de la tecnología en la sociedad". (s.f.). Recuperado de https://bienestarcosmico.com/conectando-el-futuro-beneficios-de-la-tecnologia-en-la-sociedad</li>
+                <li>"Una alerta desde Burgos sobre el daño psicosocial para los menores de abusar de la tecnología". (2025, 8 de mayo). Recuperado de https://cadenaser.com/castillayleon/2025/05/08/una-alerta-desde-burgos-sobre-el-dano-psicosocial-para-los-menores-de-abusar-de-la-tecnologia-radio-castilla</li>
+                <li>"Desafíos de la tecnología: impacto en la sociedad". (s.f.). Recuperado de https://gea.lat/desafios-de-la-tecnologia-impacto-en-la-sociedad</li>
+                <li>"Los desafíos éticos y sociales en el...". (s.f.). Recuperado de https://historia.ovh/los-desafios-eticos-y-sociales-en-la-...</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>

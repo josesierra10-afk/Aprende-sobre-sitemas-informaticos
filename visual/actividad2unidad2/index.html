@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad Evaluativa - Unidad 2</h1>
+        <h2>Línea de Tiempo: Hitos Históricos de la Tecnología</h2>
+        <p>Arrastra cada evento a su posición correcta en la línea de tiempo. ¡Verifica tus respuestas al final!</p>
+
+        <div class="events-pool">
+            <h3>Eventos por Organizar</h3>
+            <div class="event-card" draggable="true" id="e1" data-year="1947">Invención del Transistor</div>
+            <div class="event-card" draggable="true" id="e2" data-year="1969">Creación de ARPANET (Precursora de Internet)</div>
+            <div class="event-card" draggable="true" id="e3" data-year="1769">Máquina de Vapor de James Watt</div>
+            <div class="event-card" draggable="true" id="e4" data-year="1440">Invención de la Imprenta de Gutenberg</div>
+            <div class="event-card" draggable="true" id="e5" data-year="1989">Creación de la World Wide Web (WWW)</div>
+            <div class="event-card" draggable="true" id="e6" data-year="2007">Lanzamiento del primer iPhone</div>
+            <div class="event-card" draggable="true" id="e7" data-year="1876">Invención del Teléfono por Alexander Graham Bell</div>
+        </div>
+
+        <div class="timeline-track">
+            <h3>Línea de Tiempo</h3>
+            <div class="timeline-slot" data-slot-year="1400s">
+                <h4>Siglo XV</h4>
+            </div>
+            <div class="timeline-slot" data-slot-year="1700s">
+                <h4>Siglo XVIII</h4>
+            </div>
+            <div class="timeline-slot" data-slot-year="1800s">
+                <h4>Siglo XIX</h4>
+            </div>
+            <div class="timeline-slot" data-slot-year="1940s">
+                <h4>Década de 1940</h4>
+            </div>
+            <div class="timeline-slot" data-slot-year="1960s">
+                <h4>Década de 1960</h4>
+            </div>
+            <div class="timeline-slot" data-slot-year="1980s">
+                <h4>Década de 1980</h4>
+            </div>
+            <div class="timeline-slot" data-slot-year="2000s">
+                <h4>Década de 2000</h4>
+            </div>
+            </div>
+
+        <button onclick="checkTimeline()">Verificar Línea de Tiempo</button>
+        <div id="timeline-feedback" class="feedback"></div>
+        <button onclick="resetTimeline()" class="reset-button">Reiniciar Actividad</button>
+
+        <div class="references">
+            <h3>Referencias de la Unidad II:</h3>
+            <ul>
+                <li>"Evolución de la tecnología a través de la historia". (s.f.). Recuperado de https://quizizz.com/admin/quiz/6136454c5adbb5001fe1335f/historia-tecnologias</li>
+                <li>"Hitos en el desarrollo de Internet". (s.f.). Recuperado de https://internetmuseum.se/</li>
+                <li>[Agregar más referencias relevantes de la Unidad II según el contenido real del curso]</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>

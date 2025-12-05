@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Integradora: El Gran Desafío Tecnológico</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Actividad Integradora</h1>
+        <h2>El Gran Desafío Tecnológico: Repaso General</h2>
+        <p>¡Demuestra tu conocimiento! Responde las preguntas de todas las unidades.</p>
+
+        <div class="challenge-box">
+            <div class="question-display">
+                <p id="challenge-question-text">Haz clic en "Generar Pregunta" para empezar.</p>
+                <textarea id="user-answer" placeholder="Escribe tu respuesta aquí..."></textarea>
+            </div>
+            <div class="buttons-section">
+                <button onclick="generateQuestion()">Generar Pregunta</button>
+                <button onclick="checkAnswer()" id="check-btn" disabled>Verificar Respuesta</button>
+            </div>
+            <div id="challenge-feedback" class="feedback"></div>
+            <div id="challenge-correct-answer" class="correct-answer-display"></div>
+            <button onclick="resetChallenge()" class="reset-button" style="display: none;">Reiniciar Desafío</button>
+        </div>
+
+        <div class="references">
+            <h3>Referencias de todas las Unidades:</h3>
+            <ul>
+                <li>González, J. (2018). *Introducción a los sistemas tecnológicos*. Editorial Alfaomega.</li>
+                <li>"Evolución de la tecnología a través de la historia". (s.f.). Recuperado de https://experience.dropbox.com/es-la/resources/source-of-truth</li>
+                <li>"Qué son las tecnologías emergentes y su impacto". (s.f.). Recuperado de https://experience.dropbox.com/es-la/resources/source-of-truth</li>
+                <li>"Beneficios de la tecnología en la sociedad". (s.f.). Recuperado de https://experience.dropbox.com/es-la/resources/source-of-truth</li>
+                <li>[Incluye todas las referencias citadas en las Unidades I, II y III]</li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>

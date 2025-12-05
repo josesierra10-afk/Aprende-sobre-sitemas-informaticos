@@ -1,0 +1,333 @@
+/* === CONTENEDORES, ETIQUETAS ESTRUCTURALES, GRID Y FLEXBOX Header Main Footer === */
+
+/* --- HEADER --- */
+
+header {
+  width: 100%;
+  background-color: var(--color-principal); /* Fondo del header */
+}
+
+/* Primera fila: Logo a la izquierda y Botón de Ayuda a la derecha */
+.header-top {
+  display: flex; /* Distribución en fila */
+  justify-content: space-between; /* Elementos en extremos */
+  align-items: center; /* Centrado vertical */
+  padding: 10px 0;
+  height: 40px;
+}
+
+.header-top .logo img {
+  max-height: 25px; /* Limita la altura del logo */
+}
+
+.header-top .button-help img {
+  width: 25px;
+  height: 25px;
+}
+
+.header-top .button-help {
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+  padding: 12px 60px; /* Espaciado interno */
+  background-color: var(--color-acento); /* Fondo del botón */
+  color: var(--color-oscuro);
+  font-weight: 600;
+  border: none;
+  cursor: pointer; /* Cambia el cursor a modo de mano*/
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Transición animaciones */
+  width: 160px;
+  height: 40px;
+}
+
+.header-top .button-help:hover {
+  background-color: var(--color-blanco);
+  font-weight: 700;
+}
+
+/* Segunda fila del header: Menú de Navegación */
+.header-nav {
+  background-color: var(--color-gris);
+  height: 80px; /* Fondo del menú */
+}
+
+/* Menú de Navegación */
+nav {
+  display: grid; /* Grid para disposición de menús */
+  grid-template-columns: repeat(5, 1fr); /* crea cinco columnas iguales */
+  gap: var(--grid-gap); /* Espacio entre columnas */
+}
+
+nav>ul {
+  display: contents; /* Elimina caja extra del ul */
+}
+
+nav>ul>li {
+  position: relative;
+  z-index: 2;
+}
+
+nav>ul>li>a {
+  display: block; /* Ocupa todo el área */
+  padding: 27px 10px; /* Espaciado interno */
+  background-color: var(--color-gris); /* Fondo de cada enlace */
+  font-weight: 500;
+  text-align: center;
+  font-family: var(--fuente-titulo);
+  color: var(--color-oscuro);
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s ease; /* Animación con transición suave */
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+/*   border-bottom: 8px solid var(--color-secundario); */
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  font-weight: 600;
+}
+
+/* Submenús de primer y segundo nivel */
+nav ul li ul {
+  position: absolute;
+  top: 100%; /* Debajo del elemento padre */
+  left: 0;
+  z-index: 1000; /* Sobre otros elementos */
+  display: none;
+  min-width: 160px;
+  background-color: var(--color-oscuro); /* Fondo del submenú */
+}
+
+nav ul li:hover>ul,
+nav ul li:focus-within>ul {
+  display: block; /* Muestra submenú al interactuar */
+}
+
+/* Enlaces de submenús */
+nav ul li ul li a {
+  display: block; /* Ocupa todo el ancho */
+  padding: 10px 15px;
+  font-weight: 500;
+  color: var(--color-blanco); /* Color de texto */
+  border-bottom: 1px solid var(--color-principal); /* Línea divisoria inferior */
+  background-color: transparent; /* Fondo transparente */
+  text-decoration: none; /* Sin subrayado */
+  transition: background-color 0.3s ease; /* Transición animacion */
+  font-family: var(--fuente-titulo);
+}
+
+nav ul li ul li:last-child a {
+  border-bottom: none; /* Elimina borde en último elemento */
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+  background-color: var(--color-secundario); /* Fondo en hover/focus */
+  color: var(--color-blanco); /* Texto en blanco */
+}
+
+/* Tercer nivel de submenú */
+nav ul li ul li ul {
+  position: absolute;
+  top: 0;
+  left: 100%; /* A la derecha del padre */
+  display: none;
+  min-width: 140px; /* Ancho mínimo */
+  background-color: var(--color-oscuro); /* Fondo del tercer submenú */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+}
+
+nav ul li ul li:hover>ul,
+nav ul li ul li:focus-within>ul {
+  display: block;
+  /* Muestra tercer submenú en hover/focus */
+}
+
+/* --- MAIN --- */
+main {
+  padding: 0 auto 20px auto; /* Centrado horizontal y espaciado vertical */
+}
+
+/* Artículo con títulos y párrafo */
+article {
+  padding: 0 0 20px 0; /* Espaciado interno */
+  background-color: var(--color-blanco); /* Fondo blanco */
+}
+
+article h1 {
+  font-size: var(--fuente-h1-size); /* Tamaño para H1 */
+  color: var(--color-oscuro); /* Color para H1 */
+  margin: 0 0 20px 0; /* Espaciado superior e inferior */
+}
+
+article h2 {
+  font-size: var(--fuente-h2-size);
+  color: var(--color-oscuro);
+  margin: 20px 0;
+}
+
+article h3 {
+  font-size: var(--fuente-h3-size);
+  color: var(--color-oscuro);
+   margin: 20px 0;
+}
+
+article p {
+  font-size: var(--fuente-p-size); /* Tamaño para párrafos */
+  color: var(--color-oscuro); /* Color del texto */
+}
+
+/* --- FOOTER --- */
+footer {
+  width: 100%; /* Ancho completo */
+  background-color: var(--color-oscuro);
+  color: var(--color-blanco); /* Color de texto en el footer */
+  padding: 20px 0 0 0; /* Espaciado vertical */
+  position: relative;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: var(--max-container-width); /* No excede los 980px dimensión fija */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 0 15px; /* Espaciado vertical */
+  background-color: var(--color-oscuro);
+}
+
+/* Columnas en el footer */
+.footer-columns {
+  display: flex; /* Flexbox para organizar columnas */
+  flex-wrap: wrap; /* Permite envolver en dispositivos pequeños */
+  gap: var(--grid-gap); /* Espacio entre columnas */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.footer-column {
+  flex: 1; /* Cada columna ocupa el mismo ancho */
+  min-width: 250px; /* Ancho mínimo por columna */
+}
+
+.footer-column h4 {
+  margin-bottom: 10px; /* Espacio inferior para el título */
+  color: var(--color-acento);
+}
+
+.footer-column p {
+  font-size: var(--fuente-p-size-small); /* Tamaño texto footer */
+}
+
+.footer-column p a {
+  color: rgb(252, 252, 252);
+}
+
+/* Redes Sociales en Footer */
+.footer-social {
+  text-align: center; /* Centrado de íconos */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.footer-social img {
+  width: 22px;
+  height: 22px;
+  margin: 0 10px; /* Separación entre iconos */
+  cursor: pointer; /* Cursor pointer */
+  transition: transform 0.3s ease; /* Transición para animación (Animaciones) */
+}
+
+.footer-social img:hover {
+  transform: scale(1.2); /* Aumenta en hover las animaciones */
+}
+
+/* Línea Divisoria en el footer */
+.footer-divider {
+  border-top: 1px solid var(--color-secundario); /* Línea superior */
+  margin: 20px 0; /* Espaciado vertical */
+}
+
+/* Logos adicionales en columnas dentro del footer */
+.footer-logos {
+  display: flex; /* Flexbox para distribuir los logos */
+  justify-content: space-around; /* Distribución equitativa */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.footer-logos img {
+  max-height: 40px; /* Altura máxima para los logos */
+}
+
+/* Créditos del Footer */
+.footer-credits {
+    text-align: center; /* Texto centrado */
+    font-size: 0.8rem; /* Texto pequeño */
+    margin-top: 20px;
+    background-color: var(--color-principal);
+    padding: 15px 0;
+    color: var(--color-blanco);
+}
+
+.footer-credits a:visited {
+    color: var(--color-blanco);
+}
+
+/* === RESPONSIVE: GRID y FLEXBOX === */
+@media (max-width: 900px) {
+
+  /* Menú de navegación en móvil */
+  nav {
+    display: block; /* ubica elementos verticalmente */
+  }
+
+  nav>ul>li {
+    width: 100%; /* cada ítem ocupa todo el ancho */
+  }
+
+  nav>ul>li>a {
+    padding: 12px 15px; /* Disminuye padding */
+    border-bottom: 1px solid var(--color-blanco); /* Línea divisoria inferior */
+    text-align: left; /* texto a la izquierda */
+  }
+
+  /* Submenús en móvil */
+  nav ul li ul {
+    position: static; /* posicion en flujo normal */
+    display: none;
+    min-width: auto; /* Quita ancho mínimo */
+    background-color: var(--color-oscuro); /* Fondo de submenú móvil */
+    box-shadow: none; /* elimina sombra */
+  }
+
+  nav ul li:hover>ul,
+  nav ul li:focus-within>ul {
+    display: block; /* Muestra submenú al interactuar */
+  }
+
+  nav ul li ul li ul {
+    position: static;
+    display: none;
+    min-width: auto;
+    background-color: var(--color-oscuro);
+    box-shadow: none;
+  }
+
+  nav ul li ul li:hover>ul,
+  nav ul li ul li:focus-within>ul {
+    display: block;
+  }
+
+  /* columnas del footer en móvil */
+  .footer-columns {
+    flex-direction: column; /* ubicar columnas vertical */
+    align-items: center;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .footer-logos {
+    flex-direction: column; /* Logos en columna */
+    align-items: center;
+  }
+
+}
